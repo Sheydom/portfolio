@@ -1,8 +1,25 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --font-heading: "Hanken Grotesk", sans-serif;
+    --font-body: "Hanken Grotesk", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+
+    --color-primary: #00e5ff; /*Cyan*/
+    --color-secondary: #7b2dff; /*Purple*/
+    --color-background: #080a0f; /*Main page background*/
+    --color-surface: #111827; /*cards panels terminal windows*/
+    --color-text: #e5e7eb; /*Main text*/
+    --color-neutral: #9ca3af; /*secondary text*/
+    --color-success: #00ff88; /*Cyan*/
+    --color-warning: #ffb800; /*Cyan*/
+    --color-danger: #ff4d4d; /*Cyan*/
 }

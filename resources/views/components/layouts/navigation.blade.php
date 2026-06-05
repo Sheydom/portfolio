@@ -1,6 +1,6 @@
-<section class="grid grid-cols-3">
-    <h1 class="flex">Dominic Knabe</h1>
-    <nav class="flex justify-self-center">
+<section class="grid grid-cols-3 text-primary">
+    <h1 class="flex font-heading">Dominic Knabe</h1>
+    <nav class="flex justify-self-center font-mono ">
         <ul class="flex gap-5">
             <li>Root</li>
             <li>Registry</li>
@@ -10,3 +10,4 @@
     </nav>
     <div class="flex justify-self-end">test</div>
 </section>
+
