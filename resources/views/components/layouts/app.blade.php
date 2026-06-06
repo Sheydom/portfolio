@@ -21,10 +21,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen flex flex-col p-5 bg-background">
+<body class="min-h-screen flex flex-col pt-2.5 bg-background">
     <x-layouts.navigation></x-layouts.navigation>
     <x-layouts.main class="flex-1 flex flex-col">{{ $slot }}</x-layouts.main>
-    <x-layouts.footer></x-layouts.footer>
 </body>
 
 </html>
