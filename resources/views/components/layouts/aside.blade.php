@@ -1,5 +1,5 @@
 <aside
-    class="hidden sm:flex flex-col  border-r shadow-[8px_0_15px_-15px] shadow-primary border-primary/30 text-white font-mono justify-between">
+    class="hidden z-50 sm:flex flex-col  border-r shadow-[8px_0_15px_-15px] shadow-primary border-primary/30 text-white font-mono justify-between">
     <div class="">
         <div class="p-5">
             <h1 class="text-3xl font-bold">D.Knabe</h1>
@@ -9,23 +9,23 @@
             <a href="">
                 <li
                     class="px-5 py-2.5 hover:bg-primary/80 hover:text-black transition duration-300 ease-in-out ">
-                    SYSTEM_ROOT</li>
+                    About</li>
             </a>
             <a href="">
                 <li
                     class="px-5 py-2.5 hover:bg-primary/80 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                    PROJECT_REGISTRY
+                    Projects
                 </li>
             </a>
             <a href="">
                 <li
                     class="px-5 py-2.5 hover:bg-primary/80 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                    SKILL_MONITOR</li>
+                    Skills</li>
             </a>
             <a href="">
                 <li
                     class="px-5 py-2.5 hover:bg-primary/80 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                    DIAGNOSTICS_REPORT
+                    Infrastructure
                 </li>
             </a>
         </ul>
