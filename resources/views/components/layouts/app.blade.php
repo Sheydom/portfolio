@@ -21,9 +21,11 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="min-h-screen flex flex-col pt-2.5 bg-background">
+<body class="min-h-screen flex flex-col  bg-black">
     <x-layouts.navigation></x-layouts.navigation>
     <x-layouts.main class="flex-1 flex flex-col">{{ $slot }}</x-layouts.main>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
 </body>
 
 </html>
