@@ -12,13 +12,13 @@
     </div>
     <div class="w-full border bg-background border-neutral/30 p-5">
         <p class="text-primary text-xs flex justify-end items-center gap-1 mb-5"><span class="statusDot flex"></span>ONLINE</p>
-        <div class="flex justify-between text-sm mb-1"><span class="text-third">LOCATION</span><span
+        <div class="flex justify-between text-sm mb-1"><span class="text-third font-mono">LOCATION:</span><span
                 class="text-white"> MELBOURNE, AU</span></div>
-        <div class="flex justify-between text-sm mb-1"><span class="text-third">ROLE</span><span class="text-white">
+        <div class="flex justify-between text-sm mb-1"><span class="text-third font-mono">ROLE:</span><span class="text-white">
                 PROD_COORD</span></div>
-        <div class="flex justify-between text-sm mb-1"><span class="text-third">STACK</span><span
+        <div class="flex justify-between text-sm mb-1"><span class="text-third font-mono">STACK:</span><span
                 class="text-primary"> PHP/LARAVEL/DOCKER</span></div>
-        <div class="flex justify-between text-sm mb-1"><span class="text-third">LOCATION</span><span
+        <div class="flex justify-between text-sm mb-1"><span class="text-third font-mono">LOCATION:</span><span
                 class="text-white"> MELBOURNE, AU</span></div>
         <span class="w-full h-0.5 border border-neutral/10 flex"></span>
 
