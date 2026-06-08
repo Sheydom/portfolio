@@ -1,4 +1,4 @@
-<section class="flex flex-col justify-center items-center p-10 h-full gap-5">
+<section class="flex flex-col justify-center sm:grid sm:grid-cols-[300px_300px]  p-5 h-full gap-5">
     <div class="flex flex-col border bg-background border-neutral/30 p-5">
         <span class="text-neutral self-end">ID: _001</span>
         <div class="w-full h-50 border border-neutral/30"><img src="" alt="dominicKnabeImage"></div>
