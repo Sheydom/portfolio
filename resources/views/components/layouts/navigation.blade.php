@@ -1,8 +1,17 @@
 <section x-data="{ open: false }"
-    class="grid grid-cols-2 sm:grid-cols-3 items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
+    class="grid grid-cols-2 sm:grid-cols-3 sm:fixed sm:w-full sm:z-50 sm:bg-background items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
+
+    {{-- Burger button --}}
+    <button @click="open = true"  class="justify-self-start sm:hidden">
+        <svg class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none">
+            <path d="M4 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 12L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+    </button>
 
     {{-- Logo --}}
-    <h1 class="justify-self-start font-heading">
+    <h1 class="justify-self-end font-heading sm:justify-self-start">
         DOMINIC_KNABE.SYS
     </h1>
 
@@ -21,14 +30,7 @@
         Test
     </div>
 
-    {{-- Burger button --}}
-    <button @click="open = true" class="justify-self-end sm:hidden">
-        <svg class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none">
-            <path d="M4 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 12L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-        </svg>
-    </button>
+
 
     {{-- Mobile overlay --}}
     <div x-show="open" @click="open = false" x-transition.opacity class="fixed inset-0 bg-black/40 z-40 sm:hidden">
@@ -36,10 +38,10 @@
 
     {{-- Mobile drawer --}}
     <nav x-show="open" @click.outside="open = false" x-transition:enter="transition transform duration-500"
-        x-transition:enter-start="translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100"
+        x-transition:enter-start="-translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100"
         x-transition:leave="transition transform duration-500" x-transition:leave-start="translate-x-0 opacity-100"
-        x-transition:leave-end="translate-x-full opacity-0"
-        class="fixed top-0 right-0 z-50 h-screen w-64 bg-background font-mono sm:hidden">
+        x-transition:leave-end="-translate-x-full opacity-0"
+        class="fixed top-0 left-0 z-50 h-screen w-64 bg-background font-mono sm:hidden">
 
         <button @click="open = false" class="p-5 text-red-500 mr-0">
             <!-- X icon -->
@@ -104,7 +106,8 @@
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
-                            <path d="M22 19H14M2 19H10" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                            <path d="M22 19H14M2 19H10" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round">
                             </path>
                             <path d="M12 17V14" stroke="#000000" stroke-width="1" stroke-linecap="round"></path>
                             <circle cx="12" cy="19" r="2" stroke="currentColor" stroke-width="1">
@@ -115,8 +118,10 @@
                             <path
                                 d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5C22 6.65685 20.6569 8 19 8H5C3.34315 8 2 6.65685 2 5Z"
                                 stroke="currentColor" stroke-width="1"></path>
-                            <path d="M13 5L19 5" stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
-                            <path d="M13 11L19 11" stroke="currentColor" stroke-width="1" stroke-linecap="round"></path>
+                            <path d="M13 5L19 5" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                            </path>
+                            <path d="M13 11L19 11" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+                            </path>
                             <circle cx="6" cy="5" r="1" fill="#000000"></circle>
                             <circle cx="6" cy="11" r="1" fill="#000000"></circle>
                         </g>
