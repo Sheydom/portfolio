@@ -25,8 +25,8 @@
                 ['title' => 'Cloudflare', 'icon' => 'skills/cloudflare.svg'],
                 ['title' => 'Caddy', 'icon' => 'skills/caddy.svg'],
             ]"></x-skills.cardComponent>
-            <div class="bg-black overflow-hidden  border border-primary/20 rounded-xl shadow-[0_0_25px_-15px]
-                shadow-primary"><h2 class="bg-black pt-2 text-xl sm:text-2xl text-primary font-mono text-center">Deployment Workflow</h2>
-                <img class="" src="{{ asset('skills/deployment_flow.jpg') }}" alt=""></div>
+            <div class="bg-black overflow-hidden flex flex-col sm:max-h-150  border border-primary/20 rounded-xl shadow-[0_0_25px_-15px]
+                shadow-primary"><h2 class="bg-black  z-50 pt-2 text-xl sm:text-2xl text-primary font-mono text-center">Deployment Workflow</h2>
+                <img class=" mt-5 scale-120" src="{{ asset('skills/deployment_flow.jpg') }}" alt=""></div>
     </div>
 </section>
