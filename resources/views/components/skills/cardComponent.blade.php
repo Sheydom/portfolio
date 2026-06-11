@@ -1,46 +1,39 @@
+
+
+
+
 @props([
     'skill',
-    'titleF' => null,
-    'iconF' => null,
-    'titleS' => null,
-    'iconS' => null,
-    'titleT' => null,
-    'iconT' => null,
-    'titleFo' => null,
-    'iconFo' => null,
-    'titleFi' => null,
-    'iconFi' => null,
-    'titleSi' => null,
-    'iconSi' => null,
+    'items' => [],
 ])
 
-<section class="bg-background w-full p-5">
-    <h2 class=" text-2xl text-primary font-mono mb-5">{{ $skill }}</h2>
-    <div class="text-third grid grid-cols-2 gap-1 bg-black">
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleF }}
-            <img src="{{ asset($iconF) }}" class="h-5 w-5 shrink-0 ">
-        </div>
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleS }} <img src="{{ asset($iconS) }}" class="h-5 w-5 shrink-0">
-        </div>
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleT }} <img src="{{ asset($iconT) }}" class="h-5 w-5 shrink-0">
-        </div>
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleFo }} <img src="{{ asset($iconFo) }}" class="h-5 w-5 shrink-0">
-        </div>
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleFi }} <img src="{{ asset($iconFi) }}" class="h-5 w-5 shrink-0">
-        </div>
-        <div
-            {{ $attributes->merge(['class' => 'border border-neutral py-1 px-2 bg-black flex justify-between items-center']) }}>
-            {{ $titleSi }} <img src="{{ asset($iconSi) }}" class="h-5 w-5 shrink-0">
-        </div>
+<section class="bg-surface/60 border border-primary/20 rounded-xl p-2 shadow-[0_0_25px_-15px] shadow-primary">
+    <div class="flex flex-col items-center justify-between mb-5">
+        <h2 class="text-xl sm:text-2xl text-primary font-mono">
+            {{ $skill }}
+        </h2>
+
+        <span class="text-xs text-neutral font-mono">
+            {{ count($items) }} modules
+        </span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        @foreach ($items as $item)
+            <div
+                class="group flex items-center justify-between gap-3 rounded-lg border border-neutral/30 bg-black/50 px-2 py-3
+                       hover:border-primary/70 hover:bg-primary/10 transition duration-300">
+
+                <span class="text-sm sm:text-base text-third group-hover:text-primary transition">
+                    {{ $item['title'] }}
+                </span>
+
+                <img
+                    src="{{ asset($item['icon']) }}"
+                    alt="{{ $item['title'] }} icon"
+                    class="h-6 w-6 shrink-0 opacity-80 group-hover:opacity-100 transition"
+                >
+            </div>
+        @endforeach
     </div>
 </section>
