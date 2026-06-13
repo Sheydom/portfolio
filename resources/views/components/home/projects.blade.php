@@ -4,14 +4,14 @@
     <div class="flex flex-col gap-10 sm:grid sm:grid-cols-3">
         <x-home.cardComponent title="Cesar's Coffee Cup" description="Coffee business website with wholesale acces."
             role="Full Build" stack="Laravel / PHP / MySQL" deployment="Docker / Caddy / Ubuntu" hosting="Self-Hosted"
-            href="https://cesarscoffeecup.com" img="cesarscoffeecup.png"></x-home.cardComponent>
+            href="https://cesarscoffeecup.com" img="cesarscoffeecup.png" :items="['Customer Accounts','Authentication','Rate Limiter','Database Integration','Protected Dashboard','Product Catalogue','Contact Forms','Responsive Design']"></x-home.cardComponent>
         <x-home.cardComponent title="Latina Miles Away"
             description="Full stack travel consultation platform with booking and payment processing." role="Full Build"
             stack="Laravel / PHP / Tailwind" deployment="Docker / Caddy / Ubuntu" hosting="Self-Hosted"
-            href="https://latinamilesaway.com" img="latinamilesaway.png"></x-home.cardComponent>
+            href="https://latinamilesaway.com" img="latinamilesaway.png" :items="['Booking System','Stripe Payment','Responsive Layout','PDF Viewer','PDF Downloads','Language Translation ES|EN']"></x-home.cardComponent>
         <x-home.cardComponent title="Employees DB" role="Full Build"
             description="Web-based employee management application featuring authentication, database integration and full CRUD operations."
-            img="employeesDB.png" stack="PHP / JS / HTML / CSS" deployment="Docker / Caddy / Ubuntu Cloudflare" hosting="Self-Hosted"></x-home.cardComponent>
+            img="employeesDB.png" stack="PHP / JS / HTML / CSS" deployment="Docker / Caddy / Ubuntu Cloudflare" hosting="Self-Hosted" :items="['CRUD Operations','Upload Images','Authentication','Search Function','Database Integration','Responsive Design']"></x-home.cardComponent>
     </div>
 
 

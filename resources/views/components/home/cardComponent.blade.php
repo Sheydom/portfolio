@@ -8,19 +8,27 @@
     'deployment' => null,
     'hosting' => null,
     'href' => '#',
+    'items'=>[],
 ])
 
 
-<div class="flex flex-col w-full shadow-[0_0_10px_var(--color-primary)] rounded">
-    <div class="border flex flex-col flex-1 border-neutral/30 w-full ">
+<div class="flex flex-col w-full shadow-[0_0_25px_-15px] shadow-primary border-primary/20 rounded">
+    <div class="border flex flex-col flex-1 border-primary/30 w-full ">
         <div class="max-h-100 overflow-auto rounded-t"><img class=""  src="{{ asset($img) }}" alt="{{ $title }}"></img>
         </div>
         <div class="flex flex-col mt-auto  text-white p-5 w-full">
-            <div class="flex justify-between items-center">
-                <h3 class="text-xl text-primary">{{ $title }}</h3><span class="text-success">Live</span>
+            <div class=" mb-5 flex justify-between items-center">
+                <h3 class="text-3xl text-primary">{{ $title }}</h3><span class="text-success">Live</span>
             </div>
             <div class="mb-5">
+                <span class="text-third font-mono">PURPOSE:</span>
                 <p class="">{{ $description }}</p>
+            </div>
+            <div class="mb-5">
+                <span class="text-third font-mono">FEATURES:</span>
+               <ul class="grid grid-cols-2 list-disc ">@foreach ($items as $item )
+                   <li class="ml-5">{{$item}}</li>
+               @endforeach</ul>
             </div>
             <div class="flex justify-between text-right"><span class="text-third font-mono">ROLE:</span>
                 <p>{{ $role }}</p>
