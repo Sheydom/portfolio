@@ -7,7 +7,7 @@
     'items' => [],
 ])
 
-<section class="bg-surface/60 border border-primary/20 rounded-xl p-2 shadow-[0_0_25px_-15px] shadow-primary">
+<section {{$attributes->merge(['class'=>'bg-surface/60 border border-primary/20 rounded-xl p-2 shadow-[0_0_25px_-15px] shadow-primary'])}}>
     <div class="flex flex-col items-center justify-between mb-5">
         <h2 class="text-xl sm:text-2xl text-primary font-mono">
             {{ $skill }}

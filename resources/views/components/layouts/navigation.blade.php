@@ -11,7 +11,7 @@
     </button>
 
     {{-- Logo --}}
-    <h1 id="about" class="justify-self-end font-heading sm:justify-self-start">
+    <h1 class="justify-self-end font-heading sm:justify-self-start">
         DOMINIC_KNABE.SYS
     </h1>
 

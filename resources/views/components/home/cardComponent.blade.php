@@ -12,21 +12,21 @@
 ])
 
 
-<div class="flex flex-col w-full shadow-[0_0_25px_-15px] shadow-primary border-primary/20 rounded">
-    <div class="border flex flex-col flex-1 border-primary/30 w-full ">
-        <div class="max-h-100 overflow-auto rounded-t"><img class=""  src="{{ asset($img) }}" alt="{{ $title }}"></img>
+<div {{$attributes->merge(['class'=>'flex flex-col h-full max-w-xl rounded'])}}>
+    <div class="border flex flex-col flex-1 border-neutral/30 w-full bg-surface/60">
+        <div class="max-h-70 overflow-auto rounded-t"><img class=""  src="{{ asset($img) }}" alt="{{ $title }}"></img>
         </div>
-        <div class="flex flex-col mt-auto  text-white p-5 w-full">
+        <div class="flex flex-col mt-auto   text-white p-5 w-full">
             <div class=" mb-5 flex justify-between items-center">
                 <h3 class="text-3xl text-primary">{{ $title }}</h3><span class="text-success">Live</span>
             </div>
-            <div class="mb-5">
-                <span class="text-third font-mono">PURPOSE:</span>
+            <div class="mb-5 mt-auto ">
+                <span class="text-third  font-mono">PURPOSE:</span>
                 <p class="">{{ $description }}</p>
             </div>
             <div class="mb-5">
                 <span class="text-third font-mono">FEATURES:</span>
-               <ul class="grid grid-cols-2 list-disc ">@foreach ($items as $item )
+               <ul class="grid grid-cols-2 list-disc  sm:gap-2 ">@foreach ($items as $item )
                    <li class="ml-5">{{$item}}</li>
                @endforeach</ul>
             </div>

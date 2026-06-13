@@ -115,3 +115,14 @@
         box-shadow: 0 0 5px var(--color-success);
     }
 }
+
+.fade-card{
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 1000ms ease, transform 700ms ease;
+}
+
+.fade-card.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+}

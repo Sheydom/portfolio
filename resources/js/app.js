@@ -1,5 +1,10 @@
 import Alpine from "alpinejs";
+import intersect from "@alpinejs/intersect";
+
+Alpine.plugin(intersect);
+
 window.Alpine = Alpine;
+
 Alpine.start();
 
 const dot = document.getElementById("cursor-dot");
@@ -9,7 +14,6 @@ let mouseX = 0;
 let mouseY = 0;
 let ringX = 0;
 let ringY = 0;
-
 
 window.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;

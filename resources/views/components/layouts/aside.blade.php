@@ -7,7 +7,7 @@
         </div>
         <ul class="flex   flex-col gap-5">
             <li>
-                <a href=""
+                <a href="#about"
                     class="group px-5 py-2.5 flex gap-2 items-center hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out "><svg
                         class="w-7 h-7 shrink-0 text-primary group-hover:text-white  transition duration-300 ease-in-out" viewBox="0 0 24 24"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
                     About</a>
             </li>
             <li>
-                <a href=""
+                <a href="#projects"
                     class="px-5  group py-2.5 flex gap-2 items-center hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out cursor-pointer"><svg
                         class="shrink-0 w-7 h-7 items-center text-primary group-hover:text-white transition duration-300 ease-in-out"
                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li>
-                <a href=""
+                <a href="#skills"
                     class="px-5 group  py-2.5 flex gap-2 items-center hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out cursor-pointer">
                     <svg class="w-7 h-7 shrink-0 group-hover:text-white text-primary transition duration-300 ease-in-out" viewBox="0 0 24 24"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@
                     </svg>Skills</a>
             </li>
             <li>
-                <a href=""
+                <a href="#infrastructure"
                     class="px-5 group py-2.5 flex items-center gap-2 hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out cursor-pointer">
                     <svg class="w-7 h-7 shrink-0 text-primary group-hover:text-white transition duration-300 ease-in-out" viewBox="0 0 24 24"
                         fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
