@@ -11,17 +11,17 @@
     </button>
 
     {{-- Logo --}}
-    <h1 class="justify-self-end font-heading sm:justify-self-start">
+    <h1 id="about" class="justify-self-end font-heading sm:justify-self-start">
         DOMINIC_KNABE.SYS
     </h1>
 
     {{-- Desktop nav --}}
     <nav class="hidden sm:flex justify-self-center font-mono">
         <ul class="flex gap-5 items-center">
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Infrastructure</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
         </ul>
     </nav>
 
@@ -37,7 +37,7 @@
     </div>
 
     {{-- Mobile drawer --}}
-    <nav x-show="open" @click.outside="open = false" x-transition:enter="transition transform duration-500"
+    <nav x-show="open" @focusout="open = false" @click.outside="open = false" x-transition:enter="transition transform duration-500"
         x-transition:enter-start="-translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100"
         x-transition:leave="transition transform duration-500" x-transition:leave-start="translate-x-0 opacity-100"
         x-transition:leave-end="-translate-x-full opacity-0"
@@ -53,7 +53,7 @@
         </button>
 
         <ul class="flex flex-col gap-2 font-mono text-white">
-            <li><a href=""
+            <li><a href="#about" @click="open = false"
                     class="flex items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
                         class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
                         </g>
                     </svg>About</a>
             </li>
-            <li><a href=""
+            <li><a href="#projects" @click="open = false"
                     class="flex items-center px-5 py-2.5 gap-2 hover:bg-primary/80 hover:text-black transition"><svg
                         class="shrink-0 w-5 h-5 items-center text-primary" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -83,7 +83,7 @@
                         </g>
                     </svg>Projects</a>
             </li>
-            <li><a href=""
+            <li><a href="#skills" @click="open = false"
                     class="flex gap-2 items-center px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
                         class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@
                         </g>
                     </svg>Skills</a>
             </li>
-            <li><a href=""
+            <li><a href="#infrastructure" @click="open = false"
                     class="flex items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition">
                     <svg class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg" stroke="#000000">

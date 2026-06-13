@@ -10,6 +10,7 @@ let mouseY = 0;
 let ringX = 0;
 let ringY = 0;
 
+
 window.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
