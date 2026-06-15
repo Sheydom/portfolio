@@ -18,7 +18,7 @@
         </span>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
         @foreach ($items as $item)
             <div
                 class="group flex items-center justify-between gap-3 rounded-lg border border-neutral/30 bg-black/50 px-2 py-3
