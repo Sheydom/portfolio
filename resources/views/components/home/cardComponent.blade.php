@@ -12,38 +12,79 @@
 ])
 
 
-<div {{$attributes->merge(['class'=>'flex flex-col h-full max-w-xl rounded'])}}>
-    <div class="border flex flex-col flex-1 border-neutral/30 w-full bg-surface/60">
-        <div class="max-h-70 overflow-auto rounded-t"><img class=""  src="{{ asset($img) }}" alt="{{ $title }}"></img>
+<div {{ $attributes->merge(['class' => 'flex h-full max-w-xl flex-col rounded-xl']) }}>
+    <article class="flex h-full flex-col overflow-hidden rounded-xl border border-neutral/30 bg-surface/60 shadow-[0_0_25px_-18px] shadow-primary">
+
+        {{-- Image --}}
+        <div class="h-48 overflow-y-auto rounded-t-xl bg-background md:h-56">
+            <img
+                class="w-full object-cover"
+                src="{{ asset($img) }}"
+                alt="{{ $title }}"
+            >
         </div>
-        <div class="flex flex-col mt-auto   text-white p-5 w-full">
-            <div class=" mb-5 flex justify-between items-center">
-                <h3 class="text-3xl text-primary">{{ $title }}</h3><span class="text-success">Live</span>
+
+        {{-- Content --}}
+        <div class="flex flex-1 flex-col p-5 text-white">
+            <div class="mb-5 flex items-center justify-between gap-4">
+                <h3 class="text-2xl text-primary md:text-3xl">
+                    {{ $title }}
+                </h3>
+
+                <span class="rounded-full border border-success/40 px-3 py-1 text-xs text-success">
+                    Live
+                </span>
             </div>
-            <div class="mb-5 mt-auto ">
-                <span class="text-third  font-mono">PURPOSE:</span>
-                <p class="">{{ $description }}</p>
-            </div>
+
             <div class="mb-5">
-                <span class="text-third font-mono">FEATURES:</span>
-               <ul class="grid grid-cols-2 list-disc  sm:gap-2 ">@foreach ($items as $item )
-                   <li class="ml-5">{{$item}}</li>
-               @endforeach</ul>
+                <span class="font-mono text-sm text-third">PURPOSE:</span>
+                <p class="mt-1 text-sm leading-relaxed text-text">
+                    {{ $description }}
+                </p>
             </div>
-            <div class="flex justify-between text-right"><span class="text-third font-mono">ROLE:</span>
-                <p>{{ $role }}</p>
+
+            <div class="mb-5">
+                <span class="font-mono text-sm text-third">FEATURES:</span>
+
+                <ul class="mt-2 grid grid-cols-1 gap-1 text-sm text-text sm:grid-cols-2">
+                    @foreach ($items as $item)
+                        <li class="ml-5 list-disc">
+                            {{ $item }}
+                        </li>
+                    @endforeach
+                </ul>
             </div>
-            <div class="flex justify-between text-right"><span class="text-third font-mono">STACK:</span>
-                <p>{{ $stack }}</p>
+
+            <div class="mt-auto space-y-2 text-sm">
+                <div class="flex justify-between gap-4">
+                    <span class="font-mono text-third">ROLE:</span>
+                    <p class="text-right">{{ $role }}</p>
+                </div>
+
+                <div class="flex justify-between gap-4">
+                    <span class="font-mono text-third">STACK:</span>
+                    <p class="text-right">{{ $stack }}</p>
+                </div>
+
+                <div class="flex justify-between gap-4">
+                    <span class="font-mono text-third">DEPLOYMENT:</span>
+                    <p class="text-right">{{ $deployment }}</p>
+                </div>
+
+                <div class="flex justify-between gap-4">
+                    <span class="font-mono text-third">HOSTING:</span>
+                    <p class="text-right">{{ $hosting }}</p>
+                </div>
             </div>
-            <div class="flex justify-between text-right"><span class="text-third font-mono">DEPLOYMENT:</span>
-                <p>{{ $deployment }}</p>
-            </div>
-            <div class="flex justify-between text-right"><span class="text-third font-mono">HOSTING:</span>
-                <p>{{ $hosting }}</p>
-            </div>
-            <a href="{{ $href }}" target="_blank"
-                class="mt-5 text-primary border border-primary text-center py-2">Link to {{ $title }}</a>
+
+            <a
+                href="{{ $href }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 border border-primary px-4 py-2 text-center text-primary transition hover:bg-primary hover:text-background"
+            >
+                View {{ $title }}
+            </a>
         </div>
-    </div>
+    </article>
 </div>

@@ -10,26 +10,26 @@
             ['title' => 'CSS', 'icon' => 'skills/css.svg'],
             ['title' => 'JavaScript', 'icon' => 'skills/js.svg'],
             ['title' => 'Tailwind', 'icon' => 'skills/tailwind.png'],
-            ['title' => 'Livewire', 'icon' => 'skills/livewire.png'],
             ['title' => 'Alpine.js', 'icon' => 'skills/alpine.png'],
+            ['title' => 'Livewire', 'icon' => 'skills/livewire.png'],
         ]" />
 
         <x-skills.cardComponent skill="Backend" :items="[
             ['title' => 'PHP', 'icon' => 'skills/php.png'],
             ['title' => 'Laravel', 'icon' => 'skills/laravel.ico'],
             ['title' => 'Eloquent ORM', 'icon' => 'skills/orm.svg'],
+            ['title' => 'MySQL', 'icon' => 'skills/mysql.svg'],
             ['title' => 'Authentication', 'icon' => 'skills/auth.svg'],
             ['title' => 'REST APIs', 'icon' => 'skills/api.svg'],
-            ['title' => 'Validation', 'icon' => 'skills/form.svg'],
         ]" />
 
         <x-skills.cardComponent skill="Infrastructure" :items="[
-            ['title' => 'Docker', 'icon' => 'skills/docker.svg'],
             ['title' => 'Ubuntu Linux', 'icon' => 'skills/Ubuntu.svg'],
-            ['title' => 'MySQL', 'icon' => 'skills/mysql.svg'],
-            ['title' => 'Git', 'icon' => 'skills/git.svg'],
-            ['title' => 'Cloudflare', 'icon' => 'skills/cloudflare.svg'],
+            ['title' => 'Docker', 'icon' => 'skills/docker.svg'],
             ['title' => 'Caddy', 'icon' => 'skills/caddy.svg'],
+            ['title' => 'Reverse Proxy', 'icon' => 'skills/reverse.png'],
+            ['title' => 'Cloudflare', 'icon' => 'skills/cloudflare.svg'],
+            ['title' => 'Git', 'icon' => 'skills/git.svg'],
         ]" />
         <div
             class="flex min-h-90 flex-col overflow-hidden rounded-xl border border-primary/20 bg-black

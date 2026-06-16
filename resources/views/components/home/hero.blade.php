@@ -1,33 +1,26 @@
-<section
-    id="about"
+<section id="about"
     class="scroll-mt-24 min-h-[calc(100vh-80px)] w-full px-5 py-16
            flex flex-col items-center justify-center 
-           lg:grid lg:grid-cols-[360px_600px] lg:gap-10 lg:px-16"
->
+           lg:grid lg:grid-cols-[360px_600px] lg:gap-10 lg:px-16">
     <!-- Profile card -->
     <div class="w-full max-w-90 border border-neutral/30 bg-background p-5 shadow-[0_0_25px_-18px] shadow-primary">
         <span class="block text-right text-neutral font-mono text-xs mb-4">ID: _001</span>
 
         <div class="h-72 w-full overflow-hidden border border-neutral/30 bg-surface">
-            <img
-                src=""
-                alt="Dominic Knabe"
-                class="h-full w-full object-cover"
-            >
+            <img src="" alt="Dominic Knabe" class="h-full w-full object-cover">
         </div>
 
         <div class="mt-5">
             <h1 class="text-white font-bold text-4xl">D.Knabe</h1>
             <p class="mt-2 text-sm text-third font-body leading-relaxed">
-                Building Laravel applications and deploying self-hosted infrastructure.
+                Full Stack Developer building Laravel applications and deploying them on self-hosted Linux
+                infrastructure.
             </p>
         </div>
 
-        <button
-            type="button"
+        <button type="button"
             class="mt-6 w-full border border-primary/70 py-2 font-mono font-bold text-primary
-                   transition duration-300 ease-in-out hover:border-primary hover:bg-primary/10"
-        >
+                   transition duration-300 ease-in-out hover:border-primary hover:bg-primary/10">
             DOWNLOAD_RESUME.PDF
         </button>
     </div>
