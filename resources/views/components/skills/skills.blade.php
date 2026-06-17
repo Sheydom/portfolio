@@ -4,7 +4,7 @@
         SKILLS
     </h2>
 
-    <div class="grid max-w-6xl grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <div class="grid max-w-6xl grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <x-skills.cardComponent skill="Frontend" :items="[
             ['title' => 'HTML', 'icon' => 'skills/html.png'],
             ['title' => 'CSS', 'icon' => 'skills/css.svg'],

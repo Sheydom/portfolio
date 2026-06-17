@@ -2,5 +2,5 @@
     <x-home.hero></x-home.hero>
     <x-home.projects></x-home.projects>
     <x-skills.skills></x-skills.skills>
-    <x-infrastructure.infrastructure></x-infrastructure.infrastructure>
+    <x-contactMe.contactMe></x-contactMe.contactMe>
 </x-layouts.app>
