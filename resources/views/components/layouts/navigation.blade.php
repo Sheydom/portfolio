@@ -1,8 +1,8 @@
 <section x-data="{ open: false }"
-    class="grid grid-cols-2 sm:grid-cols-3 sm:fixed sm:w-full sm:z-50 sm:bg-background items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
+    class="grid grid-cols-2 sm:hidden  items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
 
     {{-- Burger button --}}
-    <button @click="open = true"  class="justify-self-start sm:hidden">
+    <button @click="open = true" class="justify-self-start sm:hidden">
         <svg class="w-7 h-7 text-primary" viewBox="0 0 24 24" fill="none">
             <path d="M4 18H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
             <path d="M4 12L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -11,24 +11,12 @@
     </button>
 
     {{-- Logo --}}
-    <h1 class="justify-self-end font-heading sm:justify-self-start">
+    <h1 class="justify-self-end font-heading sm:hidden">
         DOMINIC_KNABE.SYS
     </h1>
 
-    {{-- Desktop nav --}}
-    <nav class="hidden sm:flex justify-self-center font-mono">
-        <ul class="flex gap-5 items-center">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#infrastructure">Infrastructure</a></li>
-        </ul>
-    </nav>
 
-    {{-- Right side desktop --}}
-    <div class="hidden sm:flex justify-self-end font-mono">
-        Test
-    </div>
+
 
 
 
@@ -37,11 +25,11 @@
     </div>
 
     {{-- Mobile drawer --}}
-    <nav x-show="open" @focusout="open = false" @click.outside="open = false" x-transition:enter="transition transform duration-500"
-        x-transition:enter-start="-translate-x-full opacity-0" x-transition:enter-end="translate-x-0 opacity-100"
-        x-transition:leave="transition transform duration-500" x-transition:leave-start="translate-x-0 opacity-100"
-        x-transition:leave-end="-translate-x-full opacity-0"
-        class="fixed top-0 left-0 z-50 h-screen w-64 bg-background font-mono sm:hidden">
+    <nav x-show="open" @focusout="open = false" @click.outside="open = false"
+        x-transition:enter="transition transform duration-500" x-transition:enter-start="-translate-x-full opacity-0"
+        x-transition:enter-end="translate-x-0 opacity-100" x-transition:leave="transition transform duration-500"
+        x-transition:leave-start="translate-x-0 opacity-100" x-transition:leave-end="-translate-x-full opacity-0"
+        class="fixed top-0 flex flex-col left-0 z-50 h-screen w-64 bg-background font-mono sm:hidden">
 
         <button @click="open = false" class="p-5 text-red-500 mr-0">
             <!-- X icon -->
@@ -99,7 +87,7 @@
                         </g>
                     </svg>Skills</a>
             </li>
-            <li><a href="#infrastructure" @click="open = false"
+            {{-- <li><a href="#infrastructure" @click="open = false"
                     class="flex items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition">
                     <svg class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg" stroke="#000000">
@@ -125,8 +113,13 @@
                             <circle cx="6" cy="5" r="1" fill="#000000"></circle>
                             <circle cx="6" cy="11" r="1" fill="#000000"></circle>
                         </g>
-                    </svg>Infrastructure</a></li>
+                    </svg>Infrastructure</a></li> --}}
+
         </ul>
+        <a href="#contactForm" @click="open = false"
+            class="text-center mt-auto font-mono mx-5 mb-15 text-primary align-bottom border border-primary px-5 py-1 transition duration-300 ease-in-out hover:-translate-y-2 ">
+            INITIATE_CONTACT
+        </a>
     </nav>
 
 </section>

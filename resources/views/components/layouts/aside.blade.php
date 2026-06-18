@@ -1,5 +1,5 @@
 <aside
-    class="hidden z-50 sm:flex flex-col sm:fixed sm:bg-background sm:top-11.5 sm:h-[calc(100vh-46px)]   border-r shadow-[8px_0_15px_-15px] shadow-primary border-primary/30 text-white font-mono justify-between">
+    class="hidden z-50 sm:flex flex-col sm:fixed sm:bg-background  sm:h-screen  border-r shadow-[8px_0_15px_-15px] shadow-primary border-primary/30 text-white font-mono justify-between">
     <div class="">
         <div class="flex flex-col p-5">
             <h1 class="text-3xl font-bold">D.Knabe</h1>
@@ -9,8 +9,8 @@
             <li>
                 <a href="#about"
                     class="group px-5 py-2.5 flex gap-2 items-center hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out "><svg
-                        class="w-7 h-7 shrink-0 text-primary group-hover:text-white  transition duration-300 ease-in-out" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        class="w-7 h-7 shrink-0 text-primary group-hover:text-white  transition duration-300 ease-in-out"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -44,8 +44,8 @@
             <li>
                 <a href="#skills"
                     class="px-5 group  py-2.5 flex gap-2 items-center hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out cursor-pointer">
-                    <svg class="w-7 h-7 shrink-0 group-hover:text-white text-primary transition duration-300 ease-in-out" viewBox="0 0 24 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-7 h-7 shrink-0 group-hover:text-white text-primary transition duration-300 ease-in-out"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
@@ -58,8 +58,8 @@
                         </g>
                     </svg>Skills</a>
             </li>
-            <li>
-                <a href="#infrastructure"
+            {{-- <li>
+                <a href="#contactForm"
                     class="px-5 group py-2.5 flex items-center gap-2 hover:bg-primary/60 hover:text-black transition duration-300 ease-in-out cursor-pointer">
                     <svg class="w-7 h-7 shrink-0 text-primary group-hover:text-white transition duration-300 ease-in-out" viewBox="0 0 24 24"
                         fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
@@ -84,16 +84,19 @@
                             <circle cx="6" cy="5" r="1" fill="currentColor"></circle>
                             <circle cx="6" cy="11" r="1" fill="currentColor"></circle>
                         </g>
-                    </svg>Infrastructure
+                    </svg>Contact
                 </a>
-            </li>
+            </li> --}}
 
-            
+
         </ul>
     </div>
-<div class="">
-                <span class="border border-neutral/30 flex  w-full h-0.5 mb-20 "></span>
-                <p class="text-center font-mono mx-5 mb-5 text-primary align-bottom border border-primary px-5 py-1 ">
-                    INITIATE_CONTACT</p>
-            </div>
+    <div class="">
+
+        <span class="border border-neutral/30 flex  w-full h-0.5 mb-20 "></span><a href="#contactForm"
+            >
+            <p class="text-center font-mono mx-5 mb-5 text-primary align-bottom border border-primary px-5 py-1 transition duration-300 ease-in-out hover:-translate-y-2 ">
+                INITIATE_CONTACT</p>
+        </a>
+    </div>
 </aside>

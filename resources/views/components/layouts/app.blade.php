@@ -22,7 +22,7 @@
 </head>
 
 <body class="min-h-screen flex flex-col bg-background">
-    <x-layouts.navigation></x-layouts.navigation>
+     <x-layouts.navigation></x-layouts.navigation> 
     <x-layouts.main class="flex-1 flex flex-col ">{{ $slot }}</x-layouts.main>
     <div class="hidden sm:block" id="cursor-dot"></div>
     <div class="hidden sm:block" id="cursor-ring"></div>
