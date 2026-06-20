@@ -7,7 +7,7 @@
         <span class="block text-right text-neutral font-mono text-xs mb-4">ID: _001</span>
 
         <div class="h-72 w-full overflow-hidden border border-neutral/30 bg-surface">
-            <img src="" alt="Dominic Knabe" class="h-full w-full object-cover">
+            <img src="{{asset('Dominic_Knabe.jpg')}}" alt="Dominic Knabe" class="h-full w-full object-cover">
         </div>
 
         <div class="mt-5">
