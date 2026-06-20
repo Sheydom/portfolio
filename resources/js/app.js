@@ -66,10 +66,31 @@ form.addEventListener("submit", async (e) => {
 
     const formData = new FormData(form);
     const spamField = formData.get("spam");
+    const textArea = formData.get("message");
+    const name = formData.get("name");
+    const email = document.getElementById("email");
+
     //honeypot spam protection
     if (spamField?.trim()) {
         return;
     }
+    //text area and name validation
+    if (
+        !textArea?.trim() ||
+        textArea?.trim().length < 20 ||
+        textArea?.trim().length > 200 ||
+        !name?.trim() ||
+        name?.trim().length < 3 ||
+        name?.trim().length > 20
+    ) {
+        return;
+    }
+    //email validation
+    if (!email.checkValidity()) {
+        email.reportValidity();
+        return;
+    }
+
     formData.append("access_key", "7420cb42-4eb9-497a-864e-53664dc167fd");
 
     const originalText = submitBtn.textContent;
