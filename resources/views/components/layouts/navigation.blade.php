@@ -1,5 +1,5 @@
 <section x-data="{ open: false }"
-    class="grid grid-cols-2 sm:hidden  items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
+    class="grid grid-cols-2 sticky top-0 z-50 bg-black sm:hidden  items-center text-primary border-b border-b-neutral/30 py-2.5 px-5">
 
     {{-- Burger button --}}
     <button @click="open = true" class="justify-self-start sm:hidden">
@@ -42,8 +42,8 @@
 
         <ul class="flex flex-col gap-2 font-mono text-white">
             <li><a href="#about" @click="open = false"
-                    class="flex items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
-                        class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
+                    class="flex text-2xl items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
+                        class="w-7 h-7 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -59,8 +59,8 @@
                     </svg>About</a>
             </li>
             <li><a href="#projects" @click="open = false"
-                    class="flex items-center px-5 py-2.5 gap-2 hover:bg-primary/80 hover:text-black transition"><svg
-                        class="shrink-0 w-5 h-5 items-center text-primary" viewBox="0 0 24 24"
+                    class="flex text-2xl items-center px-5 py-2.5 gap-2 hover:bg-primary/80 hover:text-black transition"><svg
+                        class="shrink-0 w-7 h-7 items-center text-primary" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -72,8 +72,8 @@
                     </svg>Projects</a>
             </li>
             <li><a href="#skills" @click="open = false"
-                    class="flex gap-2 items-center px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
-                        class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
+                    class="flex text-2xl gap-2 items-center px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
+                        class="w-7 h-7 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -89,7 +89,7 @@
             </li>
             {{-- <li><a href="#infrastructure" @click="open = false"
                     class="flex items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition">
-                    <svg class="w-5 h-5 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
+                    <svg class="w-7 h-7 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg" stroke="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
