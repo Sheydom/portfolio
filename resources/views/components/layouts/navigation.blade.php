@@ -42,7 +42,7 @@
 
         <ul class="flex flex-col gap-2 font-mono text-white">
             <li><a href="#about" @click="open = false"
-                    class="flex text-2xl items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
+                    class="flex text-xl items-center gap-2 px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
                         class="w-7 h-7 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -59,7 +59,7 @@
                     </svg>About</a>
             </li>
             <li><a href="#projects" @click="open = false"
-                    class="flex text-2xl items-center px-5 py-2.5 gap-2 hover:bg-primary/80 hover:text-black transition"><svg
+                    class="flex text-xl items-center px-5 py-2.5 gap-2 hover:bg-primary/80 hover:text-black transition"><svg
                         class="shrink-0 w-7 h-7 items-center text-primary" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg" fill="#000000">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -72,7 +72,7 @@
                     </svg>Projects</a>
             </li>
             <li><a href="#skills" @click="open = false"
-                    class="flex text-2xl gap-2 items-center px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
+                    class="flex text-xl gap-2 items-center px-5 py-2.5 hover:bg-primary/80 hover:text-black transition"><svg
                         class="w-7 h-7 shrink-0 text-primary" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

@@ -3,7 +3,7 @@
     <div class="">
         <div class="flex flex-col p-5">
             <h1 class="text-3xl font-bold">D.Knabe</h1>
-            <p class="text-third text-xs mb-10">Full Stack Developer</p>
+            <p class="text-third text-xs mb-10">Full Stack Web Developer</p>
         </div>
         <ul class="flex   flex-col gap-5">
             <li>
