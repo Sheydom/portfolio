@@ -1,0 +1,32 @@
+ services:
+  app:
+    build: .
+    container_name: portfolio_app
+    restart: unless-stopped
+    volumes:
+      - .:/var/www
+    networks:
+      - portfolio_net
+
+  web:
+    image: caddy:2
+    container_name: portfolio_caddy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9003:80"
+    volumes:
+      - .:/var/www
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - app
+    networks:
+      - portfolio_net
+
+ networks:
+  portfolio_net:
+
+ volumes:
+  caddy_data:
+  caddy_config:
