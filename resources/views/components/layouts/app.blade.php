@@ -9,7 +9,6 @@
 
     <meta name="description"
         content="Portfolio of Dominic Knabe, a Laravel and PHP developer specialising in self-hosted web applications, Docker deployments, Linux servers, and modern web development.">
-    >
     <meta name="keywords" content="Laravel Developer, PHP Developer, Docker, Linux, MySQL, Web Developer, Melbourne">
     <meta name="author" content="Dominic Knabe">
 
@@ -18,7 +17,7 @@
     <meta property="og:description"
         content="Laravel, PHP, Docker, Linux, MySQL and self-hosted infrastructure projects.">
 
-    <meta property="og:image" content="https://dominic-knabe.com/images/preview.jpg">
+    <meta property="og:image" content="https://dominic-knabe.com/preview.jpg">
     <meta name="twitter:image" content="https://dominic-knabe.com/preview.jpg">
 
     <meta property="og:url" content="https://dominic-knabe.com">
