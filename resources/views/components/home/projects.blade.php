@@ -7,7 +7,7 @@
             title="Cesar's Coffee Cup"
             description="Wholesale coffee platform allowing customers to browse products, register accounts, and access protected wholesale pricing."
             role="Full Build" stack="Laravel / PHP / MySQL" deployment="Docker / Caddy / Ubuntu" hosting="Self-Hosted"
-            href="https://cesarscoffeecup.com" img="cesarscoffeecup.png" :items="[
+            href="https://cesarscoffeecup.com" img="cesarscoffeecup.jpg" :items="[
                 'Customer Registration',
                 'Authentication',
                 'Rate Limiting',
@@ -22,7 +22,7 @@
             title="Latina Miles Away"
             description="Travel and migration consultation platform with online bookings, secure payments, and multilingual content."
             role="Full Build" stack="Laravel / PHP / Tailwind" deployment="Docker / Caddy / Ubuntu"
-            hosting="Self-Hosted" href="https://latinamilesaway.com" img="latinamilesaway.png"
+            hosting="Self-Hosted" href="https://latinamilesaway.com" img="latinamilesaway.jpg"
             :items="[
                 'Stripe Payments',
                 'PDF Resources',
