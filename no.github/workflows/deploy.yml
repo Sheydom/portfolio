@@ -14,6 +14,12 @@ jobs:
         run: |
           cd /opt/docker-sites/portfolio
           git pull origin main
-          npm install
+
+          docker compose build app
+          docker compose up -d
+
+          docker exec portfolio_app bash -lc "cd /var/www && composer install --no-dev --optimize-autoloader"
           docker exec portfolio_app bash -lc "cd /var/www && php artisan optimize:clear"
-          npm run build  
+
+          npm install
+          npm run build
