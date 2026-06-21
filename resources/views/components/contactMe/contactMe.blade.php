@@ -28,6 +28,7 @@
             </div>
             <p id="success" class="text-green-500"></p>
         </div>
+        
 
         <div class="flex flex-col gap-2">
             <label for="message" class="font-mono text-sm text-primary">Message</label>
