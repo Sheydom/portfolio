@@ -24,7 +24,7 @@
         ]" />
 
         <x-skills.cardComponent skill="Infrastructure" :items="[
-            ['title' => 'Ubuntu Linux', 'icon' => 'skills/Ubuntu.svg'],
+            ['title' => 'Ubuntu Linux', 'icon' => 'skills/ubuntu.svg'],
             ['title' => 'Docker', 'icon' => 'skills/docker.svg'],
             ['title' => 'Caddy', 'icon' => 'skills/caddy.svg'],
             ['title' => 'Reverse Proxy', 'icon' => 'skills/reverse.png'],
