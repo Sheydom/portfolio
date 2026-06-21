@@ -48,7 +48,7 @@
 
             <div class="flex justify-between border border-neutral/10 p-3">
                 <span class="text-third font-mono">ROLE:</span>
-                <span class="text-white">FULL_STACK_DEV</span>
+                <span class="text-white">FULL_STACK_WEB_DEV</span>
             </div>
 
             <div class="flex justify-between border border-neutral/10 p-3">
