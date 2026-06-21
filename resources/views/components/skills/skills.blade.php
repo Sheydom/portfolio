@@ -15,7 +15,7 @@
         ]" />
 
         <x-skills.cardComponent skill="Backend" :items="[
-            ['title' => 'PHP', 'icon' => 'skills/php.png'],
+            ['title' => 'PHP', 'icon' => 'skills/PHP.png'],
             ['title' => 'Laravel', 'icon' => 'skills/laravel.ico'],
             ['title' => 'Eloquent ORM', 'icon' => 'skills/orm.svg'],
             ['title' => 'MySQL', 'icon' => 'skills/mysql.svg'],
