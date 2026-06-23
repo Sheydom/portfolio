@@ -12,7 +12,7 @@
                 'Authentication',
                 'Rate Limiting',
                 'Contact Forms',
-                'Admin Dashboard',
+                'Settings Dashboard',
                 'Product Catalogue',
                 'Database Integration',
                 'Responsive Design',
