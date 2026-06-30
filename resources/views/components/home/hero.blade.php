@@ -1,6 +1,6 @@
 <section id="about"
     class="scroll-mt-24 min-h-[calc(100vh-80px)] w-full px-5 py-16
-           flex flex-col items-center justify-center 
+           flex flex-col items-center justify-center
            lg:grid lg:grid-cols-[360px_600px] lg:gap-10 lg:px-16">
     <!-- Profile card -->
     <div class="w-full max-w-90 border border-neutral/30 bg-background p-5 shadow-[0_0_25px_-18px] shadow-primary">
@@ -66,12 +66,12 @@
         <div class="mt-8 grid grid-cols-2 gap-4">
             <div class="border border-neutral/10 p-5 text-center">
                 <span class="block text-primary text-4xl font-bold">03</span>
-                <span class="text-neutral text-sm font-mono">PROJECTS</span>
+                <span class="text-neutral text-sm font-mono">PROJECTS DEPLOYED</span>
             </div>
 
             <div class="border border-neutral/10 p-5 text-center">
                 <span class="block text-primary text-4xl font-bold">02</span>
-                <span class="text-neutral text-sm font-mono">SERVERS</span>
+                <span class="text-neutral text-sm font-mono">SELF-HOSTED SERVERS</span>
             </div>
         </div>
     </div>
