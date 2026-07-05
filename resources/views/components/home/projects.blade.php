@@ -5,7 +5,7 @@
         <x-home.cardComponent x-data="{ show: false }" x-intersect.once="show = true" x-data="{ show: false }"
             x-intersect.once="show = true" x-bind:class="{ 'is-visible': show }" class="fade-card"
             title="Cesar's Coffee Cup"
-            description="Wholesale coffee platform allowing customers to browse products, register accounts, and access protected wholesale pricing."
+            description="Wholesale coffee platform allowing customers to browse products and register accounts."
             role="Full Build" stack="Laravel / PHP / MySQL" deployment="Docker / Caddy / Ubuntu" hosting="Self-Hosted"
             href="https://cesarscoffeecup.com" img="cesarscoffeecup.jpg" :items="[
                 'Customer Registration',
